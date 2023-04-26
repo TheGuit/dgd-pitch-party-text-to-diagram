@@ -1,40 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>T2D</title>
+    <link rel="stylesheet" href="dist/reset.css"/>
+    <link rel="stylesheet" href="dist/reveal.css"/>
+    <link rel="stylesheet" href="dist/theme/black.css"/>
+    <link rel="stylesheet" href="plugin/highlight/monokai.css"/>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Guillaume Poittevin</h2>
+            Senior Solution Architect chez <img src="images/capgemini.png" style="height: 1em; vertical-align: middle;" alt="Capgemini" /> <br/>
+            <img src="images/twitter.png" style="height: 1em; vertical-align: middle;" alt="Twitter" />
+            <img src="images/linkedin.png" style="height: 1em; vertical-align: middle;" alt="LinkedIn" />
+            @TheGuit
+        </section>
+        <section>
+            <h1>Text-to-Diagram</h1>
+            <aside class="notes">
+                Je fais ça depuis aout dernier et je ne reviendrais pas en arrière
+            </aside>
+        </section>
+        <section>
+            <h3>La documentation c'est important</h3>
+            <aside class="notes">
+                L'enfer d'un projet sans doc, la doc c'est vivant, ...
+            </aside>
+        </section>
+        <section>
+            <h3>Comment ? Où ?</h3>
+            <aside class="notes">
+                Wiki, Confluence, Word/Libreoffice, ...
+            </aside>
+        </section>
+        <section>
+            <h3>Bonne pratique</h3>
+            <br/>
+            Mettre la documentation à côté du code
+            <aside class="notes">
+                On peut commiter des fichiers Word, mais ce n'est pas très pratique. Et git n'est pas fait pour ça.<br/>
+                <br/>
+                En plus ce n'est pas hyper pratique à review<br/>
+                <br/>
+                Donc, on fait du plein texte : Markdown, Asciidoc, LaTeX, ...
+            </aside>
+        </section>
+        <section>
+            <h3>Et pour les schémas ?</h3>
+            <aside class="notes">
+                Mettre les images dans le dépots ?<br/>
+                <br/>
+                Comment on review ? Comment on met à jour ?<br/>
+                <br/>
+                Outils gratuit ou payant + licence pour tous les devs ?
+            </aside>
+        </section>
+        <section>
+            <h3>Heureusement il existe des solutions 🎉</h3>
+            <br/>
+            D2, Mermaid, PlantUML, ...
+        </section>
+        <section>
+            <h3>Le principe</h3>
+            <br/>
+            <abbr title="Domain Specific Language">DSL</abbr> → Interprétation → Image
+        </section>
+        <section>
+            <h4>Exemples</h4>
+            <div>
+                <div style="width: 50%; float:left;">
+                  <pre>
+                    <code data-trim data-noescape style="font-size: 50%;line-height: 140%;">
+                    @startuml
+                    class Voiture {
+                      immat : text {key}
+                    }
+                    class Personne {
+                      nom : text
+                      prénom : text
+                    }
+                    Personne "1" -- "*" Voiture  : conduit
+                    @enduml
+                    </code>
+                  </pre>
+                </div>
+                <div style="width: 50%; float:left;">
+                    <img src="images/classe-1.png" class="frame" style="vertical-align:middle;"
+                         alt="Diagramme de classe Personne/Voiture"/>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4>Exemples</h4>
+            <div>
+                <div style="width: 50%; float:left;">
+                  <pre>
+                    <code data-trim data-noescape style="font-size: 50%;line-height: 140%;">
+                      @startuml
+                      [*] --> Submitted
 
-		<title>reveal.js</title>
+                      Submitted --> Authorized
+                      Submitted --> Cancelled
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+                      Authorized --> Processing
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+                      Processing --> Shipped
+                      Processing --> Cancelled
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+                      Shipped --> [*]
+                      Cancelled --> [*]
+                      @enduml
+                    </code>
+                  </pre>
+                </div>
+                <div style="width: 50%; float:left;">
+                    <img src="images/sequence-1.png" class="frame" style="vertical-align:middle;"
+                         alt="Diagramme de séquence Submitted to Shipped"/>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Les avantages</h3>
+            <ul>
+                <li>Open-source et Gratuit</li>
+                <li>Intégrable dans CI/CD</li>
+                <li>On peut faire de la <strong style="text-decoration: underline;">revue de code</strong></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Types de diagramme supportés</h3>
+            <ul>
+                <li>Séquence</li>
+                <li>Cas d'utilisation</li>
+                <li>Classes</li>
+                <li>Objet</li>
+                <li>Activité</li>
+                <li>Composant</li>
+                <li>Déploiement</li>
+            </ul>
+            <ul class="frame">
+                <li>État</li>
+                <li>Temps</li>
+                <li>Réseaux</li>
+                <li>Archimate</li>
+                <li>Gantt</li>
+                <li>Idées (mindmap)</li>
+                <li>... et pleins d'autres</li>
+            </ul>
+        </section>
+        <section>
+            <h3>À vous de jouer</h3>
+        </section>
+        <section>
+            <h3>BONUS : Le rendu ASCII art</h3>
+            <pre>
+                    ┌─────┐                   ┌───┐
+                    │Alice│                   │Bob│
+                    └──┬──┘                   └─┬─┘
+                       │Authentication Request  │
+                       │───────────────────────>│
+                       │                        │
+                       │                        │
+          ╔══════╤═════╪════════════════════════╪═══════════╗
+          ║ ALT  │  Successful case             │           ║
+          ╟──────┘     │                        │           ║
+          ║            │Authentication Accepted │           ║
+          ║            │<───────────────────────│           ║
+          ╠════════════╪════════════════════════╪═══════════╣
+          ║ [Failure]  │                        │           ║
+          ║            │Authentication Rejected │           ║
+          ║            │<───────────────────────│           ║
+          ╚════════════╪════════════════════════╪═══════════╝
+                    ┌──┴──┐                   ┌─┴─┐
+                    │Alice│                   │Bob│
+                    └─────┘                   └───┘
+          </pre>
+        </section>
+        <section>
+            <h1>BONUS</h1>
+            Faites faire vos schémas par ChatGPT
+        </section>
+        <section>
+            <blockquote class="r-fit-text">
+                Créez un diagramme de composants PlantUML représentant les flux
+                d'intégration des produits et des images pour une entreprise de
+                commerce électronique. Les produits sont d'abord créés dans l'ERP
+                Cegid, et un flux de données quotidien à 4 heures envoie ces
+                produits au PIM Akeneo. Un flux horaire traduit les nouveaux
+                produits à l'aide de la solution OneLingo dans le PIM. Il existe
+                deux flux entre le PIM Akeneo et le DAM AEM pour enrichir les
+                données d'images avec les données de produit, et un autre flux pour
+                associer les images DAM aux produits PIM. Chaque nuit à minuit, un
+                flux va du PIM à la plateforme de commerce électronique Magento pour
+                mettre à jour les produits. Et un autre flux va du DAM vers cette
+                même plateforme de commerce électronique pour mettre à jour les
+                images.
+            </blockquote>
+        </section>
+        <section>
+          <pre>
+            <code data-trim data-noescape style="font-size: 50%;line-height: 140%;">
+                @startuml
+                !theme materia-outline
+                title "Flux d'intégration des produits et des images"
+                
+                package "Système d'Intégration des Produits et des Images" {
+                  actor "ERP Cegid" as erp
+                  actor "PIM Akeneo" as pim
+                  actor "Solution OneLingo" as onelingo
+                  actor "DAM AEM" as dam
+                  actor "Plateforme de e-commerce Magento" as magento
+                
+                  erp -down-> pim : "Flux de données (tous les jours à 4h)"
+                  pim -down-> onelingo : "Flux de traduction (toutes les heures)"
+                  onelingo -down-> pim : "Produits traduits"
+                  pim -down-> dam : "Flux d'enrichissement des données images (1)"
+                  dam -down-> pim : "Flux d'enrichissement des données produits (2)"
+                  dam -down-> magento : "Flux de mise à jour des images (tous les jours à minuit)"
+                  pim -down-> magento : "Flux de mise à jour des produits (tous les jours à minuit)"
+                }
+                @enduml
+                </code>
+            </pre>
+        </section>
+        <section>
+            <img src="images/schema-chatgpt.svg" alt="Schema ChatGPT"/>
+        </section>
+        <section>
+            <h2>Des questions ?</h2>
+        </section>
+        <section>
+            <h2>Liens</h2>
+            <ul>
+                <li><a href="https://plantuml.com/fr/">Site officiel de PlantUML</a></li>
+                <li><a href="https://text-to-diagram.com/">Comparaison d'outils de texte vers diagramme</a>*</li>
+                <li><a href="https://revealjs.com/">Présentation faite avec revealjs</a></li>
+            </ul>
+            <p style="text-align: right; font-size: 50%; bottom: 0;">* par les créateurs de D2</p>
+        </section>
+    </div>
+</div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+      Reveal.initialize({
+        hash: true,
+        autoSlide: 15000,
+        controls: false,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+</script>
+</body>
 </html>

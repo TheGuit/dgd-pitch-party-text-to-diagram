@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    contentStyleType="text/css" height="787.5px" preserveAspectRatio="none"
+    style="width:1228px;height:787px;" version="1.1" viewBox="0 0 1228 787" width="1228.125px"
+    zoomAndPan="magnify">
+    <defs>
+        <linearGradient id="gjhdkpg3f1vvv0" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#151515" />
+            <stop offset="100%" stop-color="#000000" />
+        </linearGradient>
+        <linearGradient id="gjhdkpg3f1vvv1" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#D3F198" />
+            <stop offset="100%" stop-color="#B5E853" />
+        </linearGradient>
+    </defs>
+    <g>
+        <rect fill="url(#gjhdkpg3f1vvv0)" height="47.168" id="_title" rx="4.1667" ry="4.1667"
+            style="stroke:#B5E853;stroke-width:1.0416666666666667;" width="575" x="317.1875"
+            y="20.8333" />
+        <text fill="#B5E853" font-family="Verdana" font-size="20.8333" font-weight="bold"
+            lengthAdjust="spacing" textLength="552.0833" x="328.6458" y="51.6296">Flux
+            d'int&#233;gration des produits et des images</text><!--cluster
+        Syst?me d'Int?gration des Produits et des Images-->
+        <g id="cluster_Syst&#232;me d'Int&#233;gration des Produits et des Images">
+            <path
+                d="M37.5,85.7096 L389.5833,85.7096 A31.25,31.25 0 0 1 410.4167,106.543 L417.7083,116.9271 L1185.4167,116.9271 A20.8333,20.8333 0 0 1 1206.25,137.7604 L1206.25,745.0846 A20.8333,20.8333 0 0 1 1185.4167,765.918 L37.5,765.918 A20.8333,20.8333 0 0 1 16.6667,745.0846 L16.6667,106.543 A20.8333,20.8333 0 0 1 37.5,85.7096 "
+                fill="#151515" style="stroke:#B5E853;stroke-width:2.0833333333333335;" />
+            <line style="stroke:#B5E853;stroke-width:2.0833333333333335;" x1="16.6667" x2="417.7083"
+                y1="116.9271" y2="116.9271" />
+            <text fill="#B5E853" font-family="Verdana" font-size="12.5" font-weight="bold"
+                lengthAdjust="spacing" textLength="377.0833" x="26.0417" y="104.6041">Syst&#232;me
+                d'Int&#233;gration des Produits et des Images</text>
+        </g><!--entity
+        erp-->
+        <g id="elem_erp">
+            <ellipse cx="481.25" cy="138.8346" fill="url(#gjhdkpg3f1vvv1)" rx="8.3333" ry="8.3333"
+                style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <path
+                d="M481.25,147.168 L481.25,175.293 M467.7083,155.5013 L494.7917,155.5013 M481.25,175.293 L467.7083,190.918 M481.25,175.293 L494.7917,190.918 "
+                fill="none" style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <text fill="#EAEAEA" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="61.4583" x="450.5208" y="209.8124">ERP Cegid</text>
+        </g><!--entity
+        pim-->
+        <g id="elem_pim">
+            <ellipse cx="481.25" cy="315.918" fill="url(#gjhdkpg3f1vvv1)" rx="8.3333" ry="8.3333"
+                style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <path
+                d="M481.25,324.2513 L481.25,352.3763 M467.7083,332.5846 L494.7917,332.5846 M481.25,352.3763 L467.7083,368.0013 M481.25,352.3763 L494.7917,368.0013 "
+                fill="none" style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <text fill="#EAEAEA" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="71.875" x="445.3125" y="386.8958">PIM Akeneo</text>
+        </g><!--entity
+        onelingo-->
+        <g id="elem_onelingo">
+            <ellipse cx="220.8333" cy="493.0013" fill="url(#gjhdkpg3f1vvv1)" rx="8.3333" ry="8.3333"
+                style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <path
+                d="M220.8333,501.3346 L220.8333,529.4596 M207.2917,509.668 L234.375,509.668 M220.8333,529.4596 L207.2917,545.0846 M220.8333,529.4596 L234.375,545.0846 "
+                fill="none" style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <text fill="#EAEAEA" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="113.5417" x="164.0625" y="563.9791">Solution OneLingo</text>
+        </g><!--entity
+        dam-->
+        <g id="elem_dam">
+            <ellipse cx="920.8333" cy="493.0013" fill="url(#gjhdkpg3f1vvv1)" rx="8.3333" ry="8.3333"
+                style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <path
+                d="M920.8333,501.3346 L920.8333,529.4596 M907.2917,509.668 L934.375,509.668 M920.8333,529.4596 L907.2917,545.0846 M920.8333,529.4596 L934.375,545.0846 "
+                fill="none" style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <text fill="#EAEAEA" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="58.3333" x="891.6667" y="563.9791">DAM AEM</text>
+        </g><!--entity
+        magento-->
+        <g id="elem_magento">
+            <ellipse cx="578.125" cy="670.0846" fill="url(#gjhdkpg3f1vvv1)" rx="8.3333" ry="8.3333"
+                style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <path
+                d="M578.125,678.418 L578.125,706.543 M564.5833,686.7513 L591.6667,686.7513 M578.125,706.543 L564.5833,722.168 M578.125,706.543 L591.6667,722.168 "
+                fill="none" style="stroke:#D3F198;stroke-width:1.0416666666666667;" />
+            <text fill="#EAEAEA" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="231.25" x="462.5" y="741.0624">Plateforme de e-commerce Magento</text>
+        </g><!--link
+        erp to pim-->
+        <g id="link_erp_pim">
+            <path d="M481.25,218.0305 C481.25,243.1659 481.25,274.9117 481.25,300.9419 " fill="none"
+                id="erp-to-pim" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="481.25,306.4044,485.4167,297.0294,481.25,301.1961,477.0833,297.0294,481.25,306.4044"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="236.4583" x="487.5" y="267.1041">Flux de donn&#233;es (tous les jours
+                &#224; 4h)</text>
+        </g><!--link
+        pim to onelingo-->
+        <g id="link_pim_onelingo">
+            <path
+                d="M440.0167,352.8367 C344.7854,356.0607 114.0521,369.6784 66.6667,426.3346 C34.7942,464.443 98.508,493.3409 153.4552,510.1596 "
+                fill="none" id="pim-to-onelingo" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="158.7417,511.7492,150.9637,505.0593,153.754,510.2493,148.5639,513.0396,158.7417,511.7492"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="237.5" x="72.9167" y="444.1874">Flux de traduction (toutes les heures)</text>
+        </g><!--link
+        onelingo to pim-->
+        <g id="link_onelingo_pim">
+            <path
+                d="M279.2031,483.4117 C309.2813,461.1815 342.8333,436.669 358.3333,426.3346 C383.3438,409.6607 412.0344,392.1867 435.4042,378.3576 "
+                fill="none" id="onelingo-to-pim" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="440.0042,375.6419,429.813,376.8216,435.5195,378.2905,434.0506,383.997,440.0042,375.6419"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="101.0417" x="364.5833" y="444.1874">Produits traduits</text>
+        </g><!--link
+        pim to dam-->
+        <g id="link_pim_dam">
+            <path
+                d="M487.6552,395.3805 C493.0115,415.9315 502.8344,438.8628 520.8333,452.3763 C581.0677,497.5982 787.5458,457.8898 858.3333,483.6263 C866.3427,486.5378 874.2885,490.7326 881.6948,495.3773 "
+                fill="none" id="pim-to-dam" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="886.2313,498.3201,880.6326,489.7232,881.8614,495.4862,876.0984,496.715,886.2313,498.3201"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="295.8333" x="527.0833" y="444.1874">Flux d'enrichissement des
+                donn&#233;es images (1)</text>
+        </g><!--link
+        dam to pim-->
+        <g id="link_dam_pim">
+            <path
+                d="M892.8688,483.2919 C877.6438,462.9909 857.0677,440.2888 833.3333,426.3346 C735.3052,368.7003 598.6969,355.3711 527.9177,352.4805 "
+                fill="none" id="dam-to-pim" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="522.5219,352.2753,531.7318,356.7951,527.7264,352.4731,532.0484,348.4678,522.5219,352.2753"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="303.125" x="870.8333" y="444.1874">Flux d'enrichissement des
+                donn&#233;es produits (2)</text>
+        </g><!--link
+        dam to magento-->
+        <g id="link_dam_magento">
+            <path
+                d="M886.4573,554.2232 C877.4917,560.3951 867.7094,566.7701 858.3333,572.168 C802.9333,604.0607 738.5427,634.7555 685.4667,658.4846 "
+                fill="none" id="dam-to-magento" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="680.6927,660.6138,690.9519,660.6001,685.4493,658.4921,687.5573,652.9895,680.6927,660.6138"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="350" x="804.1667" y="621.2708">Flux de mise &#224; jour des images (tous
+                les jours &#224; minuit)</text>
+        </g><!--link
+        pim to magento-->
+        <g id="link_pim_magento">
+            <path
+                d="M479.3031,395.1992 C478.5583,440.4523 481.0271,512.9461 500,572.168 C509.5479,601.9721 526.826,632.219 542.7094,656.2044 "
+                fill="none" id="pim-to-magento" style="stroke:#B5E853;stroke-width:3.125;" />
+            <polygon fill="#B5E853"
+                points="545.6573,660.6076,543.9062,650.4989,542.7607,656.279,536.9805,655.1335,545.6573,660.6076"
+                style="stroke:#B5E853;stroke-width:3.125;" />
+            <text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing"
+                textLength="356.25" x="506.25" y="532.7291">Flux de mise &#224; jour des produits
+                (tous les jours &#224; minuit)</text>
+        </g><!--SRC=[ZP9DJiCm48NtESMGJSkY2n0h5aW8YbI9YeYUm8g7n3Is8_y84E8kBEavSZ76DasYjAhOZJL-txnvzfchKIBKhDoYoPnm3KB-qFXtu3EXNBUh37D2A-1eeJMQU-4ie8jd8Lc5Di-obkHKGhxviAxx8I2VhQRgOg9U9JLyPW2iTDf0ldmku0uhmNDWTC-qGwjOhU5sYmfrxBL23hsDRdmSywJmKQWgNT4Act0OxjtV4cEvZbtEHe2YOGvVj0d64N1HQYdHb0XhigXSuibKPoGZPx3W-aqjRe8JkDvdHdgjLBUZzUPEUmiDLQ_Q6mlTDrpLvpcfWsAltfiS8vnXt9TneG1nc30rUeCs4dhLn4GVSKHGCHr7Mm-JPgYCA6jXBNq1bHwbjv_U5kONSM3G7Ltu9AF_B_FB0yfVckEzfR0OOWfvZVxNiIIbK0G-IFC_qC7K2UpNBm00]-->
+    </g>
+</svg>
