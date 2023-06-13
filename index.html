@@ -135,6 +135,47 @@
             </ul>
         </section>
         <section>
+            <pre>
+              <code data-trim data-noescape class="language-diff" style="font-size: 50%;line-height: 140%;">
+                @@ -12,6 +12,7 @@ state "Invoiced" as invoiced
+                state "Paid" as paid
+                state "Label created" as labeled
+                state "Invoiced & Label created" as invoiced_labeled
+               +state "Label created & Paid" as labeled_paid
+                state "Shipped" as shipped
+                state "Received" as received
+                state "Return pending shipping" as r_p_shipping
+               @@ -38,16 +39,20 @@ sourced -right-> processing
+                processing -right-> ready
+                processing -[dashed]-> cancelled
+                
+               -ready --> paid
+               -ready -[dashed]-> cancelled : Debit KO
+               +ready --> invoiced
+               +ready --> labeled
+                
+               -paid --> labeled
+               -paid --> invoiced
+               +invoiced --> invoiced_labeled
+               +invoiced --> paid
+               +invoiced -[dashed]-> cancelled : Debit KO
+               +
+               +paid --> labeled_paid
+                
+                labeled --> invoiced_labeled
+               -invoiced --> invoiced_labeled
+                
+               -invoiced_labeled -down-> shipped
+               +invoiced_labeled --> labeled_paid
+               +
+               +labeled_paid -down-> shipped
+                
+                shipped --> received
+               
+                  </code>
+              </pre>
+        </section>
+        <section>
             <h3>Types de diagramme supportés</h3>
             <ul>
                 <li>Séquence</li>
@@ -154,9 +195,6 @@
                 <li>Idées (mindmap)</li>
                 <li>... et pleins d'autres</li>
             </ul>
-        </section>
-        <section>
-            <h3>À vous de jouer</h3>
         </section>
         <section>
             <h3>BONUS : Le rendu ASCII art</h3>
@@ -234,7 +272,7 @@
             <img src="images/schema-chatgpt.svg" alt="Schema ChatGPT"/>
         </section>
         <section>
-            <h2>Des questions ?</h2>
+            <h2>À vous de jouer 🦸</h2>
         </section>
         <section>
             <h2>Liens</h2>
