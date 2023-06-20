@@ -21,6 +21,7 @@ const eslint = require('gulp-eslint')
 const minify = require('gulp-clean-css')
 const connect = require('gulp-connect')
 const autoprefixer = require('gulp-autoprefixer')
+const inlineSource = require('gulp-inline-source-html')
 
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
@@ -269,6 +270,30 @@ gulp.task('default', gulp.series(gulp.parallel('js', 'css', 'plugins'), 'test'))
 
 gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
 
+gulp.task('inline', gulp.series('build', () =>
+
+    gulp.src(
+        [
+            './index.html'
+        ],
+        { base: './' }
+    )
+    .pipe(inlineSource())
+    .pipe(gulp.dest('./out/'))
+
+))
+
+gulp.task('package-inline', gulp.series('inline', () => 
+    gulp.src(
+        [
+            './out/index.html'
+        ],
+        { base: './' }
+    )
+    .pipe(zip('reveal-js-presentation-inline.zip'))
+    .pipe(gulp.dest('./'))
+))
+
 gulp.task('package', gulp.series(() =>
 
     gulp.src(
@@ -281,7 +306,8 @@ gulp.task('package', gulp.series(() =>
         ],
         { base: './' }
     )
-    .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
+    .pipe(zip('reveal-js-presentation.zip'))
+    .pipe(gulp.dest('./'))
 
 ))
 
